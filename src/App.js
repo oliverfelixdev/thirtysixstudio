@@ -1,3 +1,5 @@
+import React from "react";
+
 import Canvas from "./components/Canvas";
 import data from "./data";
 import Navigation from "./components/Navigation";
@@ -13,7 +15,7 @@ const App = () => {
         <Introduce />
         <Text />
         <Footer />
-        {/*         {data.map((item, index) => (
+        {/* {data.map((item, index) => (
           <div key={index}>
             {data[0].map((canvasDets, index) => (
               <Canvas key={index} details={canvasDets} />

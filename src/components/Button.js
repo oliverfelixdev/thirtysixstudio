@@ -1,8 +1,9 @@
 import React, { useRef, forwardRef, useEffect } from "react";
 import styled from "styled-components";
-import { motion, useAnimation } from "framer-motion";
 import useMousePosition from "../utils/useMousePosition";
 import { distance } from "../utils/utils";
+import { motion, useAnimation } from 'framer-motion';
+// import { motion, useAnimation } from 'motion/react';
 
 const Text = styled(motion.span)`
   display: block;
@@ -25,19 +26,18 @@ const Text = styled(motion.span)`
 `;
 
 const Style = styled.a`
-  will-change: transform;
   position: relative;
   display: inline-flex;
   margin: 1em;
   padding: 1em 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: 0.025em;
   color: #333333;
   background: #fafafa;
   border: 2px solid #cccccc;
-  border-radius: 0.25em;
+  border-radius: 100px;
   user-select: none;
   cursor: pointer;
   overflow: hidden;
@@ -50,7 +50,7 @@ const Style = styled.a`
   }
 
   &:hover {
-    border-color: black;
+    border-color: #fd2c2a;
 
     ${Text} {
       &::before {
@@ -74,7 +74,7 @@ const Fill = styled(motion.div)`
   height: 250%;
   display: block;
   border-radius: 50%;
-  background: black;
+  background: #fd2c2a;
   pointer-events: none;
   transform: translate3d(0, 80%, 0);
 `;

@@ -15,7 +15,7 @@ const Footer = () => {
           unlock our fiery alter ego. Be warned, it’s hot in there! Don’t forget
           to turn on your sound.
         </p>
-        <Button ref={hoverRef}>BRING THE HEAT</Button>
+        {/* <Button ref={hoverRef}>BRING THE HEAT</Button> */}
       </div>
     </footer>
   );
